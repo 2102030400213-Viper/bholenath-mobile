@@ -4,20 +4,16 @@
 
 /* Root Variables */
 :root {
-    /* Colors - Warm Premium Palette */
-    --color-bg-primary: #f5f1ed;
-    --color-bg-secondary: #faf8f5;
-    --color-bg-tertiary: #efe8e0;
-    --color-text-primary: #2a2420;
-    --color-text-secondary: #5a5550;
-    --color-text-light: #8a8580;
-    --color-accent-primary: #8b7355;
-    --color-accent-secondary: #d4a574;
-    --color-accent-tertiary: #6b7a5e;
-    --color-white: #ffffff;
-    --color-border: #ddd4cb;
-    --color-success: #6b7a5e;
-    --color-danger: #c97272;
+    /* Colors - Fresh Green Palette */
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f5f5f5;
+    --color-bg-tertiary: #eeeeee;
+    --color-text-primary: #212121;
+    --color-text-secondary: #616161;
+    --color-text-light: #9e9e9e;
+    --color-accent-primary: #4CAF50;
+    --color-accent-secondary: #81C784;
+    --color-accent-tertiary: #2E7D32;
 
     /* Spacing */
     --spacing-xs: 0.25rem;
