@@ -4,16 +4,20 @@
 
 /* Root Variables */
 :root {
-    /* Colors - Fresh Green Palette */
-    --color-bg-primary: #ffffff;
-    --color-bg-secondary: #f5f5f5;
-    --color-bg-tertiary: #eeeeee;
-    --color-text-primary: #212121;
-    --color-text-secondary: #616161;
-    --color-text-light: #9e9e9e;
-    --color-accent-primary: #4CAF50;
-    --color-accent-secondary: #81C784;
-    --color-accent-tertiary: #2E7D32;
+    /* Colors - Modern Tech Blue Palette (Stripe/Vercel Style) */
+    --color-bg-primary: #f0f9ff;         /* Ultra light blue */
+    --color-bg-secondary: #f8fafc;       /* Nearly white */
+    --color-bg-tertiary: #e0f2fe;        /* Light sky blue */
+    --color-text-primary: #0c2d48;       /* Very dark blue */
+    --color-text-secondary: #0369a1;     /* Deep blue */
+    --color-text-light: #0ea5e9;         /* Tech blue */
+    --color-accent-primary: #0ea5e9;     /* MAIN TECH BLUE */
+    --color-accent-secondary: #38bdf8;   /* Bright blue */
+    --color-accent-tertiary: #0369a1;    /* Deep blue */
+    --color-white: #ffffff;
+    --color-border: #bae6fd;             /* Light blue border */
+    --color-success: #0ea5e9;
+    --color-danger: #ef4444;
 
     /* Spacing */
     --spacing-xs: 0.25rem;
@@ -213,12 +217,13 @@ a:focus {
    ============================================ */
 
 .announcement-bar {
-    background: linear-gradient(135deg, var(--color-accent-tertiary) 0%, #5a6b4e 100%);
-    color: var(--color-white);
-    padding: var(--spacing-md) var(--spacing-lg);
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #ffffff;
+    padding: 1rem var(--spacing-lg);
     text-align: center;
-    font-size: var(--font-size-sm);
+    font-size: 1.1rem;                  /* BIGGER */
     animation: slideDown 0.6s ease;
+    border-bottom: 3px solid #34d399;   /* GREEN ACCENT BORDER */
 }
 
 .announcement-content {
@@ -228,23 +233,14 @@ a:focus {
     align-items: center;
     justify-content: center;
     gap: var(--spacing-md);
+    font-weight: 700;                   /* BOLD */
+    letter-spacing: 0.5px;              /* Slightly spaced */
 }
 
 .announcement-icon {
-    font-size: var(--font-size-lg);
-    animation: spin 2s linear infinite;
-}
-
-@media (max-width: 768px) {
-    .announcement-bar {
-        padding: var(--spacing-sm) var(--spacing-md);
-        font-size: var(--font-size-xs);
-    }
-
-    .announcement-content {
-        flex-wrap: wrap;
-        gap: var(--spacing-sm);
-    }
+    font-size: 1.3rem;                  /* BIGGER ICON */
+    animation: pulse 2s infinite;       /* Pulsing effect */
+    display: inline-block;
 }
 
 /* ============================================
